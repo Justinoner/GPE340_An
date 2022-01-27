@@ -1,0 +1,5 @@
+sceneSetups:
+- path: C:/Users/justi/Downloads/GPE340_An-main/GPE340_An-main/Assets/Scenes/SampleScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

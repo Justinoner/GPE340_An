@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1107 &-4543875548562996147
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Layer 0
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
+--- !u!91 &9100000
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Character
+  serializedVersion: 5
+  m_AnimatorParameters:
+  - m_Name: Right
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Forward
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  m_AnimatorLayers:
+  - serializedVersion: 5
+    m_Name: Base Layer
+    m_StateMachine: {fileID: 1021810891797870902}
+    m_Mask: {fileID: 0}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+--- !u!1102 &454821630482114879
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blend Tree
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 3911249834852245772}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1107 &1021810891797870902
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base Layer
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 454821630482114879}
+    m_Position: {x: 340, y: 130, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 454821630482114879}
+--- !u!1107 &3868967212754809462
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Layer
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
+--- !u!206 &3911249834852245772
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 8d76cc2b06acde4488e733ed6d5bf8af, type: 3}
+    m_Threshold: 0
+    m_Position: {x: 0.000013795051, y: 0.0000012620643}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: f488364944bb89143be18d0c05d6c166, type: 3}
+    m_Threshold: 0.16666667
+    m_Position: {x: 0.04767085, y: 4.3226676}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: a0cfcb74fba3efb40b783acf87f3c098, type: 3}
+    m_Threshold: 0.33333334
+    m_Position: {x: 0.040162098, y: -4.60501}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: f32855480632b8d41bb82879d26f71b7, type: 3}
+    m_Threshold: 0.5
+    m_Position: {x: -4.550525, y: 0.11792432}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: b03ba1ed3cfdd03479c225a6df3bd4af, type: 3}
+    m_Threshold: 0.6666667
+    m_Position: {x: 4.569933, y: -0.08164823}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: cd4c7ce2a71191e4d8f58938e5de8561, type: 3}
+    m_Threshold: 0.8333333
+    m_Position: {x: 0.005859809, y: 1.7658799}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: ed19f7359daeccd4d8c4f454e34539cd, type: 3}
+    m_Threshold: 1
+    m_Position: {x: 0.021943813, y: -1.7895504}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 79c6ffd38505ac14db7fcba68dedeacf, type: 3}
+    m_Threshold: 1.1666667
+    m_Position: {x: -0.07138678, y: 6.173504}
+    m_TimeScale: 5
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Right
+    m_Mirror: 0
+  m_BlendParameter: Right
+  m_BlendParameterY: Forward
+  m_MinThreshold: 0
+  m_MaxThreshold: 1.1666667
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 2
